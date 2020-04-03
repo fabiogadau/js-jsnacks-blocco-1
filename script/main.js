@@ -3,6 +3,33 @@ console.log('Js ok');
 * Snack 1
 L’utente inserisce due parole in successione, con due prompt. Il software stampa la parola più lunga. Utilizza una funzione per determinare e ritornare la parola più lunga.
 */
+// Dichiaro le variabili
+var firstWord = prompt('Inserisci la prima parola').trim();
+console.log('Come prima parola hai scelto: ' + firstWord);
+
+var secondWord = prompt('Inserisci la seconda parola').trim();
+console.log('Come seconda parola hai scelto: ' + secondWord);
+
+// Invoco la funzione
+var longerWord = wordsRuler(firstWord, secondWord);
+console.log(longerWord);
+
+// Definisco la funzione
+function wordsRuler (word1, word2) {
+  result = '';
+
+  if (word1 > word2) {
+    result = 'La parola più lunga tra quelle che hai scelto è: ' + word1;
+  }
+  else if (word2 > word1) {
+    result = 'La parola più lunga tra quelle che hai scelto è: ' + word2;
+  }
+  else {
+    result = 'Le due parole da te scelte hanno lunghezza uguale';
+  }
+
+  return result;
+};
 
 /*
 * Snack 2
