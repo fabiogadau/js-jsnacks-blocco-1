@@ -104,6 +104,7 @@ function evenOdd (num) {
 Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michele’, ‘Fabio’, ‘Roberto’) e una lista di cognomi (‘Forghieri’, ‘Papagni’, ‘Marazzini’), Gatsby vuole generare una falsa lista di 5 invitati.
 */
 
+/*
 // Dichiaro le variabili
 var names = ['Michele', 'Fabio', 'Roberto', 'Pippo', 'Omar', 'Katherine'];
 var surnames = ['Forghieri', 'Papagni', 'Marazzini', 'INPS', 'Giugiangiugia', 'J. Junior'];
@@ -122,6 +123,7 @@ for (var i = 0; i < 5; i++) {
 };
 
 console.log(list);
+*/
 
 
 
