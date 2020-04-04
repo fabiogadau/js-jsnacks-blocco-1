@@ -108,9 +108,11 @@ Generatore di “nomi cognomi” casuali: prendendo una lista di nomi (‘Michel
 // Dichiaro le variabili
 var names = ['Michele', 'Fabio', 'Roberto', 'Pippo', 'Omar', 'Katherine'];
 var surnames = ['Forghieri', 'Papagni', 'Marazzini', 'INPS', 'Giugiangiugia', 'J. Junior'];
-var list = [];
-console.log(list);
+*/
 
+/*
+// Soluzione senza function
+var list = [];
 
 // Creo nomi e cognomi col ciclo for
 for (var i = 0; i < 5; i++) {
@@ -123,6 +125,29 @@ for (var i = 0; i < 5; i++) {
 };
 
 console.log(list);
+*/
+
+/*
+// Soluzione con function (non definitiva)
+// Invoco la funzione
+var list = [createRandomFullName(names, surnames)];
+console.log(list);
+
+// Definisco la funzione
+function createRandomFullName (list1, list2) {
+  var newList = [];
+
+  for (var i = 0; i < 5; i++) {
+    var randomName = list1[Math.floor(Math.random() * list1.length)]
+    var randomSurname = list2[Math.floor(Math.random() * list2.length)]
+
+    var fullName = randomName + ' ' + randomSurname;
+
+    newList.push(fullName);
+  }
+
+  return newList;
+};
 */
 
 
